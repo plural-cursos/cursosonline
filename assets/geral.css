@@ -3,7 +3,7 @@
 
 .headBackground {
     background-image: url("../image/BG-capa-min.png");
-    width: 428px;
+    width: 100%;
     height: 285px;
     margin: auto;
     align-content: center;
@@ -14,7 +14,7 @@
 }
 
 .titleArea {
-    width: 428px;
+    width: 100%;
     height: 50px;
     position: absolute;
     top: 100px;   
@@ -82,7 +82,7 @@ img.iconSize {
 
 .backGroundCursos {
     background-color: #ffffff;
-    width: 410px;
+    width: 100%;
     height: 640px;
     border-radius: 30px;
     margin-top: 200px;
