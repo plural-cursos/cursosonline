@@ -562,8 +562,17 @@ justify-content: center;
     
 }
 
-.fitScreen {
-    height: 100%;
-    width: 100%;
-    
+* {margin:0;
+paddin: 0;
+box-sizing: border-box;
+
+
+}
+
+html {
+height: 100%
+}
+
+body {
+min-height: 100%
 }
