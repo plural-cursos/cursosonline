@@ -20,8 +20,8 @@
 <title>Cursos Online - Plural</title>
 </head>
 
-<body>
-<div class="container">
+<body class="bodyBG">
+<section class="container">
   <div class="headBackground animate__animated animate__fadeInDown">
     <div> <img class="logo" src="image/Logo-Plural-Cursos-azul.png" alt="Logo Plural Cursos"> </div>
     <div class="titleArea">
@@ -31,7 +31,7 @@
       <table>
         <tr>
           <th><img class="iconSize" src="image/icons/clicking.png"></th>
-          <th class="box"><a class="button" id="myBtnA" style="color:#090F13 !important">Contatos</a></th>
+          <th class="box"><a class="button" id="myBtnB" style="color:#090F13 !important">Contatos</a></th>
         </tr>
       </table>
     </div>
@@ -42,14 +42,14 @@
           
           <p class="listLabbelb">Contamos com especialistas em diversas temáticas, que além de formação e conhecimento, possuem também experiência prática.</p>
           
-          <p class="listLabbelb"><br>Mas o nosso cuidado vai além do conteúdo!</b></p>
+          <p class="listLabbelb"><b>Mas o nosso cuidado vai além do conteúdo!</b></p>
           
           <p class="listLabbelb">Os cursos que possuímos em nosso portfólio podem ser customizados com a identidade visual da sua marca.</p>
           
           <p class="listLabbelb">Além dos cursos já prontos, contamos com uma equipe altamente qualificada e experiente em Educação à Distância para atender às demandas de cada projeto educacional.</p>
       
       
-      </p>
+      
     <div class="alignCima" style="margin-top: 60px">
     <table >
           
@@ -58,17 +58,79 @@
               <td><img class="iconSize2" src="image/icons/clicking2.png"></td>
               <td class="box"><a class="button" href="cursos_online.html">Acessar portfólio</a></td>
             </tr>
-          
+        </table> 
     </div>
     </div>
 
 
 
     
+  
+</section>
+
+<!--========The Modals======--> 
+<!--MODAL 0-->
+<div id="myModalB" class="modal"> 
+  
+  <!-- Modal content -->
+  <div class="modal-content animate__animated animate__zoomIn overflow-auto"> <span class="closeB" >X Fechar</span> <br>
+    <div class=headerModal>
+      <p style="text-align: center"><b>Entre em contato com nossa equipe!</b></p>
+      
+      <table >
+        <tr >
+          <th><img class="iconContatos" src="image/icons/01.png"</th>
+          <th class="bodyContact">(51) 3392.6009</th>
+        </tr>
+        <tr>
+          <th><img class="iconContatos" src="image/icons/02.png"</th>
+          <th class="bodyContact">(51) 98280.4275</th>
+        </tr>
+        <tr>
+          <th><img class="iconContatos" src="image/icons/03.png"</th>
+          <th class="bodyContact">palestras@pluralcursos.com</th>
+        </tr>
+        <tr>
+          <th><img class="iconContatos" src="image/icons/04.png"</th>
+          <th class="bodyContact">pluraledu.com.br</th>
+        </tr>
+      </table>
+    </div>
   </div>
 </div>
+<script>
+// Get the modal
+var modalB = document.getElementById("myModalB");
+
+// Get the button that opens the modal
+var btnB = document.getElementById("myBtnB");
+
+// Get the <span> element that closes the modal
+var spanB = document.getElementsByClassName ("closeB")[0];
+
+// When the user clicks the button, open the modal 
+btnB.onclick = function() {
+  modalB.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanB.onclick = function() {
+  modalB.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalB) {
+    modalB.style.display = "none";
+  }
+}
+</script> 
+
+<!--===FIM MODAL 0===--> 
 
 
+
+<!-- Fim Modal content --> 
 
 <!-- SCRIPTS--> 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 

@@ -13,14 +13,16 @@
 <link rel="stylesheet" href="assets/mdb.min.css"
     
 
+
 <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 <link
     rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <title>Cursos Online - Plural</title>
 </head>
 
-<body>
-<div class="container">
+<body class="bodyBG">
+    
+<section class="container">
   <div class="headBackground animate__animated animate__fadeInDown">
     <div> <img class="logo" src="image/Logo-Plural-Cursos-azul.png" alt="Logo Plural Cursos"> </div>
     <div class="titleArea">
@@ -30,14 +32,14 @@
       <table>
         <tr>
           <th><img class="iconSize" src="image/icons/clicking.png"></th>
-            <th class="box"><a class="button" id="myBtnA" style="color:#090F13 !important">Contatos</a></th>
+          <th class="box"><a class="button" id="myBtnA" style="color:#090F13 !important">Contatos</a></th>
         </tr>
       </table>
     </div>
   </div>
-  <div class="backGroundCursos stack-top animate__animated animate__fadeIn">
+  <div class="backGroundCursos  animate__animated animate__fadeIn">
     <p class="listLabbel">Clique nos itens abaixo e confira nosso portfólio de cursos</p>
-    <div class="scrollableContent overflow-y-scroll" style="max-height: 550px"> 
+    <div class="scrollableContent overflow-y-scroll"> 
       
       <!-- Inicio Curso 1 -->
       <div class="coursesList animate__animated animate__fadeInRight delayCourseList1">
@@ -71,7 +73,7 @@
           </tbody>
         </table>
       </div>
-        
+      
       <!-- Fim Curso 2 --> 
       
       <!-- Inicio Curso 3 -->
@@ -188,54 +190,39 @@
       </table>
     </div>
   </div>
-  
-   
-  
-</div>
+</section>
 
 <!--========The Modals======--> 
 <!--MODAL 0-->
-  <div id="myModalA" class="modal"> 
-    
-    <!-- Modal content -->
-    <div class="modal-content animate__animated animate__zoomIn overflow-auto"> <span class="closeA" >X Fechar</span>
-        <br>
+<div id="myModalA" class="modal"> 
+  
+  <!-- Modal content -->
+  <div class="modal-content animate__animated animate__zoomIn overflow-auto"> <span class="closeA" >X Fechar</span> <br>
+    <div class=headerModal>
+      <p style="text-align: center"><b>Entre em contato com nossa equipe!</b></p>
       
-        <div class=headerModal>          
-            <p style="text-align: center"><b>Entre em contato com nossa equipe!</b></p>  
-            Teste
-            <table >
-                <tr >
-                    <th><img class="iconContatos" src="image/icons/01.png"</th>
-                    <th class="bodyContact">(51) 3392.6009</th>
-                
-                </tr>
-                
-                <tr>
-                    <th><img class="iconContatos" src="image/icons/02.png"</th>
-                    <th class="bodyContact">(51) 98280.4275</th>
-                
-                </tr>
-                <tr>
-                    <th><img class="iconContatos" src="image/icons/03.png"</th>
-                    <th class="bodyContact">palestras@pluralcursos.com</th>
-                
-                </tr>
-                <tr>
-                    <th><img class="iconContatos" src="image/icons/04.png"</th>
-                    <th class="bodyContact">pluraledu.com.br</th>
-                
-                </tr>
-            
-            
-            
-            </table>
-                
-                
-        </div>
+      <table >
+        <tr >
+          <th><img class="iconContatos" src="image/icons/01.png"</th>
+          <th class="bodyContact">(51) 3392.6009</th>
+        </tr>
+        <tr>
+          <th><img class="iconContatos" src="image/icons/02.png"</th>
+          <th class="bodyContact">(51) 98280.4275</th>
+        </tr>
+        <tr>
+          <th><img class="iconContatos" src="image/icons/03.png"</th>
+          <th class="bodyContact">palestras@pluralcursos.com</th>
+        </tr>
+        <tr>
+          <th><img class="iconContatos" src="image/icons/04.png"</th>
+          <th class="bodyContact">pluraledu.com.br</th>
+        </tr>
+      </table>
     </div>
   </div>
-  <script>
+</div>
+<script>
 // Get the modal
 var modalA = document.getElementById("myModalA");
 
@@ -261,33 +248,31 @@ window.onclick = function(event) {
     modalA.style.display = "none";
   }
 }
-</script>
+</script> 
+
+<!--===FIM MODAL 0===--> 
+
+<!--MODAL 1-->
+<div id="myModal1" class="modal"> 
   
-<!--===FIM MODAL 0===-->
-
-
-  <!--MODAL 1-->
-  <div id="myModal1" class="modal"> 
-    
-    <!-- Modal content -->
-    <div class="modal-content animate__animated animate__zoomIn"> <span class="close1">X Fechar</span>
-        <br>
-      
-        <div class="headerModal overflow-auto">          
-            <p style="text-align: center"><b>Comunicação e <i>Feedback</i></b></p>  
-            <p>
-            <ul>
-                <li>A Importância do Feedback</li>
+  <!-- Modal content -->
+  <div class="modal-content animate__animated animate__zoomIn"> <span class="close1">X Fechar</span> <br>
+    <div class="headerModal overflow-auto">
+      <p style="text-align: center"><b>Comunicação e <i>Feedback</i></b></p>
+      <p>
+      <ul>
+        <li>A Importância do Feedback</li>
         <li>Como Falar Bem: Guia Rápido</li>
         <li>Comunicação Assertiva: Fale e Influencie</li>
         <li>Comunicação Interpessoal</li>
         <li>Feedback para Gestores e Líderes</li>
         <li>Gestão de Conflitos e Comunicação Não Violenta</li>
-            </ul></p>
-        </div>
+      </ul>
+      </p>
     </div>
   </div>
-  <script>
+</div>
+<script>
 // Get the modal
 var modal1 = document.getElementById("myModal1");
 
@@ -313,41 +298,36 @@ window.onclick = function(event) {
     modal1.style.display = "none";
   }
 }
-</script>
-  
-<!--===FIM MODAL 1===-->
+</script> 
 
+<!--===FIM MODAL 1===--> 
 
 <!--MODAL 2-->
-  <div id="myModal2" class="modal"> 
-    
-    <!-- Modal content -->
-    <div class="modal-content animate__animated animate__zoomIn "> <span class="close2">X Fechar</span>
-        <br>
-      
-        <div class="headerModal overflow-auto">          
-            <p style="text-align: center"><b>Gestão e Liderança</b></p>  
-            <p>
-            <ul>
-                <li>Desenvolvendo a Proatividade com foco nos Riscos</li>
+<div id="myModal2" class="modal"> 
+  
+  <!-- Modal content -->
+  <div class="modal-content animate__animated animate__zoomIn "> <span class="close2">X Fechar</span> <br>
+    <div class="headerModal overflow-auto">
+      <p style="text-align: center"><b>Gestão e Liderança</b></p>
+      <p>
+      <ul>
+        <li>Desenvolvendo a Proatividade com foco nos Riscos</li>
         <li>Desenvolvimento de Competências Gerenciais</li>
         <li>Feedback para Gestores e Líderes</li>
         <li>Gestão de Conflitos</li>
         <li>Gestão de Conflitos e Comunicação Não Violenta</li>
         <li>Gestão de Riscos</li>
-                <li>Líder Coach</li>
-                <li>Liderança: Desenvolvimento e Aprimoramento com foco na gestão do Tempo e Produtividade</li>
-                <li>O impacto do Trabalho do Indivíduo para a Empresa</li>
-                <li>Prevenindo o Assédio Moral e Sexual no Trabalho</li>
-                <li>Visão Sistêmica: o Indivíduo e o Todo</li>
-            </ul></p>
-        </div>
+        <li>Líder Coach</li>
+        <li>Liderança: Desenvolvimento e Aprimoramento com foco na gestão do Tempo e Produtividade</li>
+        <li>O impacto do Trabalho do Indivíduo para a Empresa</li>
+        <li>Prevenindo o Assédio Moral e Sexual no Trabalho</li>
+        <li>Visão Sistêmica: o Indivíduo e o Todo</li>
+      </ul>
+      </p>
     </div>
-  </div>    
-    
-    
-
-  <script>
+  </div>
+</div>
+<script>
 // Get the modal
 var modal2 = document.getElementById("myModal2");
 
@@ -373,47 +353,39 @@ window.onclick = function(event) {
     modal2.style.display = "none";
   }
 }
-</script>
-  
-<!--===FIM MODAL 2===-->
+</script> 
 
+<!--===FIM MODAL 2===--> 
 
 <!--MODAL 3-->
-  <div id="myModal3" class="modal"> 
-    
-    <!-- Modal content -->
-    <div class="modal-content animate__animated animate__zoomIn "> <span class="close3">X Fechar</span>
-        <br>
-      
-        <div class="headerModal overflow-auto">          
-            <p style="text-align: center"><b>Desenvolvimento Pessoal</b></p>  
-            <p>
-            <ul>
-                <li>A Harmonização das Relações no Ambiente de Trabalho</li>
+<div id="myModal3" class="modal"> 
+  
+  <!-- Modal content -->
+  <div class="modal-content animate__animated animate__zoomIn "> <span class="close3">X Fechar</span> <br>
+    <div class="headerModal overflow-auto">
+      <p style="text-align: center"><b>Desenvolvimento Pessoal</b></p>
+      <p>
+      <ul>
+        <li>A Harmonização das Relações no Ambiente de Trabalho</li>
         <li>A Relação do Indivíduo com a Empresa e com outros indivíduos: uma Visão Sistêmica</li>
         <li>Aperfeiçoamento das Interações Interpessoais no Trabalho</li>
         <li>Desenvolvendo a Proatividade com foco nos Riscos</li>
         <li>Gestão de Finanças Pessoais</li>
         <li>Gestão do Tempo: Dicas Práticas</li>
-                <li>Inovação e Criatividade no Trabalho</li>
-                <li>Inteligência Emocional</li>
-                <li>O impacto do Trabalho do Indivíduo para a Empresa</li>
-                <li>Prevenindo o Assédio Moral e Sexual no Trabalho</li>
-                <li>Relacionamento Interpessoal</li>
-                <li>Trabalho em Home Office: Gestão, Organização e Produtividade</li>
-                <li>Visão Sistêmica: o Indivíduo e o Todo</li>
-                <li>Você e o Todo: Aperfeiçoando os Processos</li>
-            </ul></p> 
-    
-
-
-        </div>
+        <li>Inovação e Criatividade no Trabalho</li>
+        <li>Inteligência Emocional</li>
+        <li>O impacto do Trabalho do Indivíduo para a Empresa</li>
+        <li>Prevenindo o Assédio Moral e Sexual no Trabalho</li>
+        <li>Relacionamento Interpessoal</li>
+        <li>Trabalho em Home Office: Gestão, Organização e Produtividade</li>
+        <li>Visão Sistêmica: o Indivíduo e o Todo</li>
+        <li>Você e o Todo: Aperfeiçoando os Processos</li>
+      </ul>
+      </p>
     </div>
-  </div>    
-    
-    
-
-  <script>
+  </div>
+</div>
+<script>
 // Get the modal
 var modal3 = document.getElementById("myModal3");
 
@@ -439,34 +411,26 @@ window.onclick = function(event) {
     modal3.style.display = "none";
   }
 }
-</script>
-  
-<!--===FIM MODAL 3===-->
+</script> 
+
+<!--===FIM MODAL 3===--> 
 
 <!--MODAL 4-->
-  <div id="myModal4" class="modal"> 
-    
-    <!-- Modal content -->
-    <div class="modal-content animate__animated animate__zoomIn "> <span class="close4">X Fechar</span>
-        <br>
-      
-        <div class="headerModal overflow-auto">          
-            <p style="text-align: center"><b>Criatividade e Inovação</b></p>  
-            <p>
-            <ul>
-                <li>Inovação e Criatividade no Trabalho</li>
-        
-            </ul></p>   
-
-    
-
-        </div>
+<div id="myModal4" class="modal"> 
+  
+  <!-- Modal content -->
+  <div class="modal-content animate__animated animate__zoomIn "> <span class="close4">X Fechar</span> <br>
+    <div class="headerModal overflow-auto">
+      <p style="text-align: center"><b>Criatividade e Inovação</b></p>
+      <p>
+      <ul>
+        <li>Inovação e Criatividade no Trabalho</li>
+      </ul>
+      </p>
     </div>
-  </div>    
-    
-    
-
-  <script>
+  </div>
+</div>
+<script>
 // Get the modal
 var modal4 = document.getElementById("myModal4");
 
@@ -492,32 +456,26 @@ window.onclick = function(event) {
     modal4.style.display = "none";
   }
 }
-</script>
-  
-<!--===FIM MODAL 4===-->
+</script> 
+
+<!--===FIM MODAL 4===--> 
 
 <!--MODAL 5-->
-  <div id="myModal5" class="modal"> 
-    
-    <!-- Modal content -->
-    <div class="modal-content animate__animated animate__zoomIn "> <span class="close5">X Fechar</span>
-        <br>
-      
-        <div class="headerModal overflow-auto">          
-            <p style="text-align: center"><b>Produtividade</b></p>  
-            <p>
-            <ul>
-                <li>Trabalho em Home Office: Gestão, Organização e Produtividade</li>
-        
-            </ul></p> 
-
-        </div>
+<div id="myModal5" class="modal"> 
+  
+  <!-- Modal content -->
+  <div class="modal-content animate__animated animate__zoomIn "> <span class="close5">X Fechar</span> <br>
+    <div class="headerModal overflow-auto">
+      <p style="text-align: center"><b>Produtividade</b></p>
+      <p>
+      <ul>
+        <li>Trabalho em Home Office: Gestão, Organização e Produtividade</li>
+      </ul>
+      </p>
     </div>
-  </div>    
-    
-    
-
-  <script>
+  </div>
+</div>
+<script>
 // Get the modal
 var modal5 = document.getElementById("myModal5");
 
@@ -543,33 +501,27 @@ window.onclick = function(event) {
     modal5.style.display = "none";
   }
 }
-</script>
-  
-<!--===FIM MODAL 5===-->
+</script> 
 
+<!--===FIM MODAL 5===--> 
 
 <!--MODAL 6-->
-  <div id="myModal6" class="modal"> 
-    
-    <!-- Modal content -->
-    <div class="modal-content animate__animated animate__zoomIn "> <span class="close6">X Fechar</span>
-        <br>
-      
-        <div class="headerModal overflow-auto">          
-            <p style="text-align: center"><b><i>Compliance</i></b></p>  
-            <p>
-            <ul>
-                <li>Compreendendo o ESG</li>
-                <li>LGPD – Lei Geral de Proteção de Dados</li>
-        
-            </ul></p> 
-
-        </div>
+<div id="myModal6" class="modal"> 
+  
+  <!-- Modal content -->
+  <div class="modal-content animate__animated animate__zoomIn "> <span class="close6">X Fechar</span> <br>
+    <div class="headerModal overflow-auto">
+      <p style="text-align: center"><b><i>Compliance</i></b></p>
+      <p>
+      <ul>
+        <li>Compreendendo o ESG</li>
+        <li>LGPD – Lei Geral de Proteção de Dados</li>
+      </ul>
+      </p>
     </div>
-  </div>    
-
-
-  <script>
+  </div>
+</div>
+<script>
 // Get the modal
 var modal6 = document.getElementById("myModal6");
 
@@ -595,44 +547,35 @@ window.onclick = function(event) {
     modal6.style.display = "none";
   }
 }
-</script>
-  
-<!--===FIM MODAL 6===-->
+</script> 
+
+<!--===FIM MODAL 6===--> 
 
 <!--MODAL 7-->
-  <div id="myModal7" class="modal"> 
-    
-    <!-- Modal content -->
-    <div class="modal-content animate__animated animate__zoomIn "> <span class="close7">X Fechar</span>
-        <br>
-      
-        <div class="headerModal overflow-auto">          
-            <p style="text-align: center"><b>Segurança no Trabalho</b></p>  
-            <p>
-            <ul>
-                <li>Direção Defensiva</li>
-                <li>NR 4 – EPC</li>
-                <li>NR 5 – CIPA</li>
-                <li>NR 6 – EPI</li>
-                <li>NR 9 – PPRA (Riscos Ambientais)</li>
-                <li>NR 10 – SISE (Eletricidade)</li>
-                <li>NR 17 – Ergonomia</li>
-                <li>NR 33 – Trabalho em Espaços Confinados</li>
-                <li>NR 34 – Trabalho a Quente</li>
-                <li>NR 35 – Trabalho em Altura</li>
-        
-            </ul></p> 
-
-
-
-    
-        
-        </div>
+<div id="myModal7" class="modal"> 
+  
+  <!-- Modal content -->
+  <div class="modal-content animate__animated animate__zoomIn "> <span class="close7">X Fechar</span> <br>
+    <div class="headerModal overflow-auto">
+      <p style="text-align: center"><b>Segurança no Trabalho</b></p>
+      <p>
+      <ul>
+        <li>Direção Defensiva</li>
+        <li>NR 4 – EPC</li>
+        <li>NR 5 – CIPA</li>
+        <li>NR 6 – EPI</li>
+        <li>NR 9 – PPRA (Riscos Ambientais)</li>
+        <li>NR 10 – SISE (Eletricidade)</li>
+        <li>NR 17 – Ergonomia</li>
+        <li>NR 33 – Trabalho em Espaços Confinados</li>
+        <li>NR 34 – Trabalho a Quente</li>
+        <li>NR 35 – Trabalho em Altura</li>
+      </ul>
+      </p>
     </div>
-  </div>    
-
-
-  <script>
+  </div>
+</div>
+<script>
 // Get the modal
 var modal7 = document.getElementById("myModal7");
 
@@ -658,36 +601,26 @@ window.onclick = function(event) {
     modal7.style.display = "none";
   }
 }
-</script>
-  
-<!--===FIM MODAL 7===-->
+</script> 
+
+<!--===FIM MODAL 7===--> 
 
 <!--MODAL 8-->
-  <div id="myModal8" class="modal"> 
-    
-    <!-- Modal content -->
-    <div class="modal-content animate__animated animate__zoomIn "> <span class="close8">X Fechar</span>
-        <br>
-      
-        <div class="headerModal overflow-auto">          
-            <p style="text-align: center"><b>Instrumentais</b></p>  
-            <p>
-            <ul>
-                <li>Matemática Financeira na Prática (com uso da HP 12C)</li>
-                
-        
-            </ul></p> 
-
-
-
-    
-        
-        </div>
+<div id="myModal8" class="modal"> 
+  
+  <!-- Modal content -->
+  <div class="modal-content animate__animated animate__zoomIn "> <span class="close8">X Fechar</span> <br>
+    <div class="headerModal overflow-auto">
+      <p style="text-align: center"><b>Instrumentais</b></p>
+      <p>
+      <ul>
+        <li>Matemática Financeira na Prática (com uso da HP 12C)</li>
+      </ul>
+      </p>
     </div>
-  </div>    
-
-
-  <script>
+  </div>
+</div>
+<script>
 // Get the modal
 var modal8 = document.getElementById("myModal8");
 
@@ -713,11 +646,11 @@ window.onclick = function(event) {
     modal8.style.display = "none";
   }
 }
-</script>
-  
-<!--===FIM MODAL 6===-->
+</script> 
 
-<!-- Fim Modal content -->
+<!--===FIM MODAL 6===--> 
+
+<!-- Fim Modal content --> 
 
 <!-- SCRIPTS--> 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
