@@ -45,7 +45,7 @@
 
 .backGroundCursos {
     background-color: #ffffff;
-    width: 46.57vh;
+    width: 45.57vh;
     
     max-height: 600px;
     border-radius: 30px;
@@ -362,6 +362,7 @@ a:hover {
   padding-top: 200px; /* Location of the box */
     padding-left: 5px;
     padding-right: 5px;
+    
   
   
 top: 0;
@@ -387,7 +388,7 @@ top: 0;
     padding-right: 5px;
     padding-bottom: 5px;
   border: 1px solid #888;
-  width: 428px !important;
+  width: 420px !important;
 
 }
 
