@@ -25,9 +25,9 @@
 .container {
     
     max-width: 1080px;
-    min-width: 428px;
+    
     margin: 0 auto;
-    display: grid;
+    
     display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
   grid-template-rows:  0.5fr 1.5fr 1fr;
