@@ -4,6 +4,9 @@
 .bodyBG {
     background-image: url("../image/bg body.jpg");
     background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100vh;
+    overflow-x: hidden;
     
 }
 
@@ -22,12 +25,7 @@
         
 }
 
-.body {
-    
-    min-height: 100vh;
-width: 100vh;
-overflow-x: hidden;
-}
+
 
 .containerPlural {
     
