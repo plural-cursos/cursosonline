@@ -359,7 +359,7 @@ a:hover {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 9;  /*Sit on top */
-  padding-top: 200px; /* Location of the box */
+  padding-top: 150px; /* Location of the box */
     padding-left: 5px;
     padding-right: 5px;
     
@@ -382,7 +382,7 @@ top: 0;
     background-size: cover;
     
   background-color: #ffffff;
-  margin-left: 5px;
+  margin-left: 0px;
     margin-right: 8px;
   padding-top: 20px;
     padding-left: 5px;
